@@ -331,7 +331,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4793E132492B936000ED452 /* Build configuration list for PBXNativeTarget "MagicCFG" */;
 			buildPhases = (
-				7F0FC622DBE74582A2F23D1E /* [CP] Check Pods Manifest.lock */,
 				E4793DFF2492B934000ED452 /* Sources */,
 				E4793E002492B934000ED452 /* Frameworks */,
 				E4793E012492B934000ED452 /* Resources */,
@@ -425,28 +424,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7F0FC622DBE74582A2F23D1E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MagicCFG-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E4AC27EC24B2378100322E1E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -649,34 +626,10 @@
 				EXCLUDED_ARCHS = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
-					"\"$(SRCROOT)/../../Downloads/Deca5-1.2-Beta2\"",
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase/FirebaseDatabase.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage/FirebaseStorage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
-					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
 					/usr/local/include,
 				);
 				INFOPLIST_FILE = MagicCFG/Info.plist;
@@ -722,18 +675,6 @@
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseAuth/FirebaseAuth.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseDatabase/FirebaseDatabase.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseStorage/FirebaseStorage.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/leveldb-library/leveldb.framework/Headers\"",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
-					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
 					/usr/local/include,
 				);
 				INFOPLIST_FILE = MagicCFG/Info.plist;
